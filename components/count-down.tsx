@@ -66,7 +66,7 @@ useEffect(()=>{
 const formattime=(time:number):string=>{
     const minuts=Math.floor(time / 60);
     const seconds=Math.floor(time % 60);
-    return `${String(minuts).padStart(2,"0")}:${String(time).padStart(2,"0")}`;
+    return `${String(minuts).padStart(2,"0")}:${String(seconds).padStart(2,"0")}`;
 }
 const handledurationchange=(e:ChangeEvent<HTMLInputElement>)=>{
 setduration(Number(e.target.value) || "")
